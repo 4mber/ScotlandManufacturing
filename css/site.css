@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+/* Global Style Sheet for SCOTLAND  */
+
+/* @Begin Group Core Elements */
+html {
+	height: 101%;
+	/* Force Vertical Scroll Bar for IE */
+	margin-bottom: 1px
+}
+body {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	background:#000000 url(../images/background.jpg) repeat-x;
+	color:#555555
+}
+/* @End Group Core Elements */
+article {
+	margin-bottom: 25px;
+	display: inline-block;
+}
+/* @Begin Global Container Elements */
+#container {
+}
+
+#logo {
+	height:110px;
+	z-index:1;
+	margin-top:-15px
+}
+.new-hire {
+	padding-right: 20px;
+}
+#topRight {
+	float:right;
+	position: relative;
+	z-index: 10;
+}
+#showcaseBackground {
+	background:url(../images/showcaseBackground.jpg) 50% 0 no-repeat;
+	margin-top:-60px;
+	margin-bottom:-25px
+}
+
+/*Getting Safari/Google Chrome to Behave*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+#showcaseBackground {
+	height:242px
+}
+}
+/*@media screen and (-webkit-min-device-pixel-ratio:0){
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    margin-top:60px
+}
+}/* Commented out because it was causing the carousel to be 60px too low on webkit browsers - Coons / OCT 30 2012 */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+#interior #navigation {
+	top:47px;
+	position:relative
+}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+#interior #showcaseBackground {
+	height:127px
+}
+}
+/*End Safari/Google Chrome Hacks*/
+#showcase {
+	height:242px;
+	margin-top:-60px;
+}
+
+#navigationBackground {
+	background:#FFF url(../images/navigationBackground.png) 50% 0% no-repeat;
+	margin-top:25px;
+	height:68px;
+	z-index:-1
+}
+#navigation {
+	height:68px;
+	float:right;
+	padding:0px;
+	margin:0px;
+}
+#navigation ul li.current div.navLeft{
+	background:url(../images/navigationLeft.png) no-repeat;
+	height:40px;
+	margin-left:-20px;
+	margin-top:-11px;
+	position:absolute;
+	width:17px;
+}
+#navigation ul li.current div.navRight{
+	background:url(../images/navigationRight.png) 100% 0;
+	height:40px;
+	margin-left:-5px;
+	margin-top:-28px;
+	position:absolute;
+	width:93%;
+	z-index:5
+}
+
+#interior #navigationBackground {
+	background:url(../images/navigationBackgroundInterior.png) repeat-x;
+	margin-top:-47px;
+	height:68px
+
+}
+#interior #navigation {
+	margin-top:-45px;
+}
+#interior #showcase {
+	height:100px;
+	margin-top:0px;
+}
+#interior #showcaseBackground {
+	background:url(../images/showcaseBackgroundInterior.jpg) 50% 65% no-repeat;
+	margin-top:-23px;
+	margin-bottom:auto;
+	z-index:-2
+}
+#mainContentBackground{
+	background:#FFF;
+}
+#mainContent {
+	margin-bottom:75px;
+	text-align:left;
+	background:#FFF
+}
+#contentLeft {
+	margin-top:10px
+}
+#centerColumn {
+	float: left;
+	width: 360px;
+}
+#centerColumnwide {
+	float: left;
+	width: 350px;
+}
+#rightColumn {
+	float: right;
+	width: 300px;
+	margin-right: -50px;
+}
+#rightColumn1 {
+	float: right;
+	width: 300px;
+	padding-top:260px;
+}
+#rightColumn2 {
+	float: right;
+	width: 300px;
+	padding-top:80px;
+}
+.leftModule {
+	width:180px;
+	padding:10px;
+	background:#EBEBEB;
+	border:1px solid #C1C1C1;
+	font-size:90%
+}
+.leftModule hr {
+    background:url(../images/leftModuleHR.png) repeat-x top left;
+    border: 0;
+	width:174px;
+	height:2px;
+	margin-bottom:-5px
+
+}
+
+.topGreen {
+	width:227px;
+	height:23px;
+	background:url(../images/topGreen.png) no-repeat;
+	position:absolute;
+	margin-top:25px;
+	margin-left:7px
+}
+.rightModule {
+	width:180px;
+	padding:10px;
+	background:#EBEBEB;
+	border:1px solid #C1C1C1;
+	font-size:90%;
+	color:#898989
+}
+.padding {
+	padding:15px
+}
+
+.margin {
+	margin:15px
+}
+
+#footerBackground {
+	background:url(../images/background.jpg) repeat-x;
+}
+#footer {
+	height:125px;
+}
+#footerLeft {
+	background:url(../images/footerLeftBackground2.png) no-repeat 90% 100%;
+	padding-left:10px
+}
+
+#testimonial {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color: #898989;
+	font-style:italic;
+	padding: 10px 0 0 5px;
+	width: 190px;
+}
+#testimonialRight{
+	padding: 5px 0 15px 0px;
+	margin-bottom:15px;
+	border-bottom:1px dashed;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px;
+	color: #898989;
+	font-style:italic;
+	width: 190px;
+}
+
+blockquote {
+	border : 2px solid #14124a;
+	width: 600px;
+	margin: 0px;
+	padding: 10px;
+	background-color: #ccc;
+	background-position: center;
+	font-size:10px;
+	font-weight:bold;
+}
+/* ----- BEGIN contact form ----- */
+.contact {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color: #14124a;
+}
+
+.iptcontact, .contact textarea {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	background:#edeae5;
+	border:1px solid #03a536;
+	color:#363636;
+	width:350px;
+}
+
+.btncontact {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+	background:#edeae5;
+	border:1px solid #03a536;
+	color:#161c23;
+	padding:2px 8px 2px 8px;
+}
+/* ----- END contact form ----- */
+
+/* ----- BEGIN affiliations divs ----- */
+#affiliationsimage {
+	width:200px;
+	height:150px;
+	float:left;
+	border-top:1px solid #C1C1C1;
+	border-bottom:1px solid #C1C1C1;
+	border-left:1px solid #C1C1C1;
+	padding:10px;
+}
+#affiliationstext {
+	width:400px;
+	height:150px;
+	float:left;
+	border-top:1px solid #C1C1C1;
+	border-bottom:1px solid #C1C1C1;
+	border-right:1px solid #C1C1C1;
+	padding:10px;
+}
+/* ----- END affiliations divs ----- */
+
+/* ----- BEGIN add caption to JCarousel divs ----- */
+.image {
+	position: relative;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.image h2 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 420px;
+   margin-left: 5px;
+   padding: 5px 10px;
+   background: #000;
+   opacity: 0.65;
+   -moz-opacity: 0.65; /* older Gecko-based browsers */
+   filter:alpha(opacity=65); /* For IE6&7 */
+   font-size: 13px;
+   color: white;
+}
+
+/* ----- END add caption to JCarousel divs ----- */
+
+/* ----- LiveValidation Styles ----- */
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+	float: left;
+}
+.LV_validation_message.LV_valid {
+	background: url(../images/checkmark.png) no-repeat;
+	height: 18px;
+	width: 18px;
+	text-indent: -999px;
+}
+.LV_valid {
+    color:#00CC00;
+}
+
+.LV_invalid {
+    color:#CC0000;
+}
+
+.LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active {
+    border: 1px solid #00CC00;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+    border: 1px solid #CC0000;
+}
+input {
+float: left;
+}
+textarea {
+float: left;
+}
+/* -----END LiveValidation Styles ----- */

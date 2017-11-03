@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+/* Typography Style Sheet for SCOTLAND */
+
+/*Global Typography*/
+body {
+	font:12px/1.5 Verdana, Geneva, sans-serif;
+	color:#4D4D4D
+}
+.georgia {
+	font-family:Georgia, "Times New Roman", Times, serif	
+}
+a {
+	color:#377B2B;
+	text-decoration: none;
+	outline:none
+}
+a:hover {
+	color:#221F72
+}
+a:focus {
+	outline:1px dotted invert
+}
+hr {
+	border:0 #ccc solid;
+	border-top-width:1px;
+	clear:both;
+	height:0
+}
+h1 {
+	font-size:175%;
+	color:#377B2B;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px
+}
+h2 {
+	font-size:175%;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px;
+}
+
+h3 {
+	font-size:165%;
+	color:#377B2B;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px;
+}
+h4 {
+	font-size:115%;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px;
+	margin-top:0;
+}
+h5 {
+	font-size:170%;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px;
+	margin-bottom:5px;
+	line-height:100%
+}
+h6 {
+	font-size:115%;
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-1px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+ol {
+	list-style:decimal
+}
+ul {
+	list-style:disc;
+	list-style-image:none
+}
+li {
+	margin-left:10px;
+	margin-bottom:10px
+}
+p, dl, hr, h1, h2, h3, h4, ol, ul, pre, table, address, fieldset {
+	margin-bottom:10px
+}
+/*Custom Style Typography*/
+#showcase {
+	color:#FFF;
+}
+#showcase h2{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold
+}
+
+#topRight input, select {
+	font:11px/1.5 Verdana, Geneva, sans-serif;
+	color:#4D4D4D;
+	width:188px;
+	background:#FFF;
+	border:1px solid #4d4d4d;
+	margin:0px 10px;
+	padding:2px;
+	z-index:999
+}
+#topRight input {
+	height:15px;
+	background:#FFF url(../images/search.png) 2px center no-repeat;
+	padding-left:17px
+}
+.leftModule h2 {
+	margin-bottom:-5px;
+	margin-top:-3px;
+	font-size:165%
+}
+.rightModule input {
+	font:11px/1.5 Verdana, Geneva, sans-serif;
+	color:#4D4D4D;
+	width:150px;
+	background:#FFF;
+	border:1px solid #C1C1C1;
+	padding:2px;
+	height:15px
+}
+.rightModule h3{
+	margin-top:-5px
+}
+
+#navigation ul li a {
+	color:#888888
+}
+#navigation ul li.current a {
+	color:#377B2B;
+	background:url(../images/navigationCurrent.png) 50% 50% no-repeat;
+	z-index:999
+}
+#navigation ul li a:hover {
+	color:#377B2B;
+	background:url(../images/navigationCurrent.png) 50% 50% no-repeat;
+	z-index:999
+}
+ul.leftMenu li {
+	margin-bottom:0px;
+	margin-left:-20px;
+	display:block;
+	width:170px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+ul.leftMenu {
+	list-style-image:none;
+	list-style:none;
+	padding-left:5px;
+	font-size:110%;
+	margin-top:5px
+}
+ul.leftMenu a{
+	color:#8C8B8B;
+	display:block;
+	margin-left:20px;
+	width:170px;
+}
+ul.leftMenu a:hover{
+	color:#377B2B;
+}
+ul.leftMenu li.current a{
+	color:#377B2B;
+}
+ul.leftMenu li.current {
+	background:url(../images/leftMenuCurrent.png) 0 5px no-repeat;	
+}
+.leftMenuDivider {
+	width:174px;
+	height:2px;
+	background:url(../images/leftModuleHR.png) no-repeat
+}
+#copyright {
+	color:#FFF;
+	font-size:90%;
+	font-weight:bold;
+	padding-top:15px;
+	text-align:left;
+}
+#copyright a {
+	color:#FFF;
+}
+#copyright a:hover {
+	text-decoration:underline
+}
