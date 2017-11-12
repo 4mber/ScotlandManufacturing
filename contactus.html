@@ -150,7 +150,7 @@ you to simply edit one file for all interior menus. -->
                     First Name:<br />
                     <input name="first" id="firstname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
                     Last Name:<br />
-        			<input name="last" id="lastname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
+        						<input name="last" id="lastname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
                     Email:<br />
                     <input name="email" id="contactemail" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
                     Phone:<br />
@@ -215,9 +215,9 @@ you to simply edit one file for all interior menus. -->
 					companyname.add( Validate.Presence );
 					var contactmessage = new LiveValidation( 'contactmessage');
 					contactmessage.add( Validate.Presence );
-					// var answer = new LiveValidation( 'answer' );
-					// answer.add( Validate.Presence );
-					// answer.add( Validate.Inclusion, { within: [ '' ] } );
+					var answer = new LiveValidation( 'answer' );
+					answer.add( Validate.Presence );
+					answer.add( Validate.Inclusion, { within: [ '' ] } );
 				</script>
             </div>
 
