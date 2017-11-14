@@ -146,79 +146,39 @@ you to simply edit one file for all interior menus. -->
           <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Scotland+Manufacturing+22261+Skyway+Church+Road,+Laurinburg+NC+28352&amp;sll=34.773204,-79.353218&amp;sspn=0.226173,0.531807&amp;ie=UTF8&amp;hq=Scotland+Manufacturing&amp;hnear=Skyway+Church+Rd,+Maxton,+NC+28364&amp;cid=17086779099099480659&amp;ll=34.819441,-79.336395&amp;spn=0.098648,0.145912&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Scotland+Manufacturing+22261+Skyway+Church+Road,+Laurinburg+NC+28352&amp;sll=34.773204,-79.353218&amp;sspn=0.226173,0.531807&amp;ie=UTF8&amp;hq=Scotland+Manufacturing&amp;hnear=Skyway+Church+Rd,+Maxton,+NC+28364&amp;cid=17086779099099480659&amp;ll=34.819441,-79.336395&amp;spn=0.098648,0.145912&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
 			<h2>Request a Quote or Presentation</h2>
             <div class="contact">
-                <form name="contact" method="post" action="contact_sent.php">
-                    First Name:<br />
-                    <input name="first" id="firstname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
-                    Last Name:<br />
-        						<input name="last" id="lastname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
-                    Email:<br />
-                    <input name="email" id="contactemail" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
-                    Phone:<br />
-                    <input name="phone" id="contactphone" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
-                    Company Name:<br />
-                    <input name="name" id="companyname" size="35" class="iptcontact"><br /><div class="clear"></div><!--clear-->
-                    Job Title:<br />
-                    <input name="title" id="jobtitle" size="35" class="iptcontact"><br />  <div class="clear"></div><!--clear-->
-                    How did you hear about Scotland Manufacturing?<br />
-                    <select id="refsource" name="product_search" size"35" class="iptcontact" style="margin-left:0px;"> <div class="clear"></div><!--clear-->
-						<option>Buyers Guide</option>
-                        <option>Industry Association</option>
-                        <option>Internet Search</option>
-                        <option>Referral</option>
-                        <option>Trade Publication</option>
-                        <option>Other (Please Specify)</option>
-					</select> <br />
-                    <div id="other" style="display: none;">
-                    Other:<br />
-                    <input name="other" id="other" rows="1" cols="35" class="iptcontact"></textarea><br /><div class="clear"></div><!--clear-->
-                    </div><!--other-->
-                     Message:<br />
-                    <textarea name="message" id="contactmessage" rows="3" cols="35" class="iptcontact"></textarea><br /><div class="clear"></div><!--clear--><br />
-                    	<script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LeRt7sSAAAAANIagx3qOFuiONlMeLhhenNzmsYz"></script>
 
-	<noscript>
-  		<iframe src="https://www.google.com/recaptcha/api/noscript?k=6LeRt7sSAAAAANIagx3qOFuiONlMeLhhenNzmsYz" height="300" width="500" frameborder="0"></iframe><br/>
-  		<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-  		<input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
-	</noscript>
-                    <input type="submit" class="btncontact" value="SUBMIT" onmouseover="this.style.color='#cc4e65';" onmouseout="this.style.color='#161c23';" />
-                </form>
-                 <script type="text/javascript">
-					 $("select#refsource").change(function () {
-								var str = "";
-								str = $("select option:selected").text();
-								if(str == "product searchOther (Please Specify)")
-								{
-									$("div#other").css("display", "" );
-								}
-								else
-								{
-									$("div#other").css("display", "none" );
+							<form action="https://formspree.io/amberleightrask@gmail.com"
+									method="POST">
+								<span class="form-title">First Name:</span><br>
+								<input type="text" name="First Name" class="iptcontact" required><br>
+								<span class="form-title">Last Name:</span><br>
+								<input type="text" name="Last Name" class="iptcontact" required><br>
+								<span class="form-title">Email:</span><br>
+								<input type="email" name="_replyto" class="iptcontact" required><br>
+								<span class="form-title">Phone:</span><br>
+								<input type="text" name="Phone Number" class="iptcontact" required><br>
+								<span class="form-title">Company Name:</span><br>
+								<input type="text" name="Company Name" class="iptcontact" required><br>
+								<span class="form-title">Job Title:</span><br>
+								<input type="text" name="Job Title" class="iptcontact" ><br>
+								<span class="form-title">How did you hear about Scotland Manufacturing?</span><br>
+								<select name="How did you hear about Scotland Manufacturing?" class="iptcontact" >
+										<option value="BuyersGuide" selected>Buyers Guide</option>
+										<option value="IndustryAssociation">Industry Association</option>
+										<option value="InternetSearch" selected>Internet Search</option>
+										<option value="Referral">Referral</option>
+										<option value="TradePublication" selected>Trade Publication</option>
+										<option value="Other">Other (Please Specify)</option>
+								</select><br>
+								<span class="form-title">Message:</span><br>
+								<textarea name="Message" required></textarea><br><br><br>
+								<input type="submit" value="SUBMIT" class="btncontact">
+								<input type="hidden" name="_next" value="https://www.scotlandmanufacturing.com/contact_sent.html" />
+								<input type="hidden" name="_subject" value="New Submission from ScotlandManufacturing.com" />
+								<!-- <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" /> -->
 
-								}
-							})
-							.change();
+							</form>
 
-				 	//initialize Objects
-					var firstname = new LiveValidation( 'firstname');
-					firstname.add( Validate.Presence);
-					var lastname = new LiveValidation( 'lastname');
-					lastname.add( Validate.Presence );
-					var contactemail = new LiveValidation( 'contactemail');
-					contactemail.add( Validate.Presence );
-					contactemail.add( Validate.Email );
-					var contactphone = new LiveValidation( 'contactphone');
-					contactphone.add( Validate.Presence );
-					contactphone.add( Validate.Numericality, { onlyInteger: true });
-					contactphone.add( Validate.Length, { is: 10 } );
-					var companyname = new LiveValidation( 'companyname');
-					companyname.add( Validate.Presence );
-					var contactmessage = new LiveValidation( 'contactmessage');
-					contactmessage.add( Validate.Presence );
-					var answer = new LiveValidation( 'answer' );
-					answer.add( Validate.Presence );
-					answer.add( Validate.Inclusion, { within: [ '' ] } );
-				</script>
             </div>
 
           </div>

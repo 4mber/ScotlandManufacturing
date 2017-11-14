@@ -259,6 +259,10 @@ blockquote {
 	color:#161c23;
 	padding:2px 8px 2px 8px;
 }
+
+.btncontact:hover {
+	color:#FF0000;
+}
 /* ----- END contact form ----- */
 
 /* ----- BEGIN affiliations divs ----- */
@@ -343,7 +347,7 @@ textarea.LV_invalid_field:active {
     border: 1px solid #CC0000;
 }
 input {
-float: left;
+float: none;
 }
 textarea {
 float: left;

@@ -8,7 +8,7 @@ body {
 	color:#4D4D4D
 }
 .georgia {
-	font-family:Georgia, "Times New Roman", Times, serif	
+	font-family:Georgia, "Times New Roman", Times, serif
 }
 a {
 	color:#377B2B;
@@ -98,7 +98,7 @@ p, dl, hr, h1, h2, h3, h4, ol, ul, pre, table, address, fieldset {
 	width:188px;
 	background:#FFF;
 	border:1px solid #4d4d4d;
-	margin:0px 10px;
+	margin:0px 0px;
 	padding:2px;
 	z-index:999
 }
@@ -166,7 +166,7 @@ ul.leftMenu li.current a{
 	color:#377B2B;
 }
 ul.leftMenu li.current {
-	background:url(../images/leftMenuCurrent.png) 0 5px no-repeat;	
+	background:url(../images/leftMenuCurrent.png) 0 5px no-repeat;
 }
 .leftMenuDivider {
 	width:174px;
